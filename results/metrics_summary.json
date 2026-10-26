@@ -1,0 +1,513 @@
+{
+  "SVM": {
+    "name": "SVM",
+    "regime": "Classical (Raw 51 Feats)",
+    "category": "Classical",
+    "train_time_sec": 0.017334575997665524,
+    "latency_ms": 10.397479017534351,
+    "test_accuracy": 0.9625,
+    "macro_f1": 0.9627004303873486,
+    "per_class": {
+      "basophil": {
+        "tp": 96.0,
+        "tn": 296.0,
+        "fp": 4.0,
+        "fn": 4.0,
+        "sensitivity": 0.96,
+        "specificity": 0.9866666666666667,
+        "accuracy": 0.98
+      },
+      "eosinophil": {
+        "tp": 100.0,
+        "tn": 300.0,
+        "fp": 0.0,
+        "fn": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0
+      },
+      "erythroblast": {
+        "tp": 93.0,
+        "tn": 299.0,
+        "fp": 1.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.9966666666666667,
+        "accuracy": 0.98
+      },
+      "ig": {
+        "tp": 96.0,
+        "tn": 290.0,
+        "fp": 10.0,
+        "fn": 4.0,
+        "sensitivity": 0.96,
+        "specificity": 0.9666666666666667,
+        "accuracy": 0.965
+      }
+    },
+    "confusion_matrix": [
+      [
+        96,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        93,
+        6
+      ],
+      [
+        3,
+        0,
+        1,
+        96
+      ]
+    ]
+  },
+  "PCA SVM": {
+    "name": "PCA SVM",
+    "regime": "Classical (PCA 95%)",
+    "category": "Classical",
+    "train_time_sec": 0.012037970998790115,
+    "latency_ms": 10.39286313003322,
+    "test_accuracy": 0.9425,
+    "macro_f1": 0.9428603934616085,
+    "per_class": {
+      "basophil": {
+        "tp": 95.0,
+        "tn": 294.0,
+        "fp": 6.0,
+        "fn": 5.0,
+        "sensitivity": 0.95,
+        "specificity": 0.98,
+        "accuracy": 0.9725
+      },
+      "eosinophil": {
+        "tp": 100.0,
+        "tn": 300.0,
+        "fp": 0.0,
+        "fn": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0
+      },
+      "erythroblast": {
+        "tp": 89.0,
+        "tn": 298.0,
+        "fp": 2.0,
+        "fn": 11.0,
+        "sensitivity": 0.89,
+        "specificity": 0.9933333333333333,
+        "accuracy": 0.9675
+      },
+      "ig": {
+        "tp": 93.0,
+        "tn": 285.0,
+        "fp": 15.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.95,
+        "accuracy": 0.945
+      }
+    },
+    "confusion_matrix": [
+      [
+        95,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        89,
+        10
+      ],
+      [
+        5,
+        0,
+        2,
+        93
+      ]
+    ]
+  },
+  "Random Forest": {
+    "name": "Random Forest",
+    "regime": "Classical (Raw 51 Feats)",
+    "category": "Classical",
+    "train_time_sec": 0.15243936899787514,
+    "latency_ms": 10.474922022527608,
+    "test_accuracy": 0.9425,
+    "macro_f1": 0.9431014282833673,
+    "per_class": {
+      "basophil": {
+        "tp": 93.0,
+        "tn": 296.0,
+        "fp": 4.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.9866666666666667,
+        "accuracy": 0.9725
+      },
+      "eosinophil": {
+        "tp": 99.0,
+        "tn": 299.0,
+        "fp": 1.0,
+        "fn": 1.0,
+        "sensitivity": 0.99,
+        "specificity": 0.9966666666666667,
+        "accuracy": 0.995
+      },
+      "erythroblast": {
+        "tp": 91.0,
+        "tn": 298.0,
+        "fp": 2.0,
+        "fn": 9.0,
+        "sensitivity": 0.91,
+        "specificity": 0.9933333333333333,
+        "accuracy": 0.9725
+      },
+      "ig": {
+        "tp": 94.0,
+        "tn": 284.0,
+        "fp": 16.0,
+        "fn": 6.0,
+        "sensitivity": 0.94,
+        "specificity": 0.9466666666666667,
+        "accuracy": 0.945
+      }
+    },
+    "confusion_matrix": [
+      [
+        93,
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        99,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        91,
+        8
+      ],
+      [
+        3,
+        1,
+        2,
+        94
+      ]
+    ]
+  },
+  "PCA Random Forest": {
+    "name": "PCA Random Forest",
+    "regime": "Classical (PCA 95%)",
+    "category": "Classical",
+    "train_time_sec": 0.15829139600100461,
+    "latency_ms": 10.442529995030782,
+    "test_accuracy": 0.9375,
+    "macro_f1": 0.9379735914802553,
+    "per_class": {
+      "basophil": {
+        "tp": 93.0,
+        "tn": 294.0,
+        "fp": 6.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.98,
+        "accuracy": 0.9675
+      },
+      "eosinophil": {
+        "tp": 96.0,
+        "tn": 297.0,
+        "fp": 3.0,
+        "fn": 4.0,
+        "sensitivity": 0.96,
+        "specificity": 0.99,
+        "accuracy": 0.9825
+      },
+      "erythroblast": {
+        "tp": 93.0,
+        "tn": 298.0,
+        "fp": 2.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.9933333333333333,
+        "accuracy": 0.9775
+      },
+      "ig": {
+        "tp": 93.0,
+        "tn": 286.0,
+        "fp": 14.0,
+        "fn": 7.0,
+        "sensitivity": 0.93,
+        "specificity": 0.9533333333333334,
+        "accuracy": 0.9475
+      }
+    },
+    "confusion_matrix": [
+      [
+        93,
+        2,
+        0,
+        5
+      ],
+      [
+        1,
+        96,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        93,
+        6
+      ],
+      [
+        4,
+        1,
+        2,
+        93
+      ]
+    ]
+  },
+  "DL_low_data_baseline": {
+    "name": "ResNet-18",
+    "regime": "Low-Data 15% (No Aug)",
+    "category": "Deep Learning",
+    "train_time_sec": 21.08484685199801,
+    "latency_ms": 1.8858306500624167,
+    "test_accuracy": 0.96,
+    "macro_f1": 0.9600201528866403,
+    "per_class": {
+      "basophil": {
+        "tp": 96.0,
+        "tn": 293.0,
+        "fp": 7.0,
+        "fn": 4.0,
+        "sensitivity": 0.96,
+        "specificity": 0.9766666666666667,
+        "accuracy": 0.9725
+      },
+      "eosinophil": {
+        "tp": 99.0,
+        "tn": 300.0,
+        "fp": 0.0,
+        "fn": 1.0,
+        "sensitivity": 0.99,
+        "specificity": 1.0,
+        "accuracy": 0.9975
+      },
+      "erythroblast": {
+        "tp": 97.0,
+        "tn": 297.0,
+        "fp": 3.0,
+        "fn": 3.0,
+        "sensitivity": 0.97,
+        "specificity": 0.99,
+        "accuracy": 0.985
+      },
+      "ig": {
+        "tp": 92.0,
+        "tn": 294.0,
+        "fp": 6.0,
+        "fn": 8.0,
+        "sensitivity": 0.92,
+        "specificity": 0.98,
+        "accuracy": 0.965
+      }
+    },
+    "confusion_matrix": [
+      [
+        96,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        99,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        97,
+        3
+      ],
+      [
+        7,
+        0,
+        1,
+        92
+      ]
+    ]
+  },
+  "DL_low_data_augmented": {
+    "name": "ResNet-18",
+    "regime": "Low-Data 15% + Domain Aug",
+    "category": "Deep Learning",
+    "train_time_sec": 30.561442567006452,
+    "latency_ms": 1.9013920800352935,
+    "test_accuracy": 0.98,
+    "macro_f1": 0.9799996874921874,
+    "per_class": {
+      "basophil": {
+        "tp": 98.0,
+        "tn": 297.0,
+        "fp": 3.0,
+        "fn": 2.0,
+        "sensitivity": 0.98,
+        "specificity": 0.99,
+        "accuracy": 0.9875
+      },
+      "eosinophil": {
+        "tp": 99.0,
+        "tn": 299.0,
+        "fp": 1.0,
+        "fn": 1.0,
+        "sensitivity": 0.99,
+        "specificity": 0.9966666666666667,
+        "accuracy": 0.995
+      },
+      "erythroblast": {
+        "tp": 98.0,
+        "tn": 298.0,
+        "fp": 2.0,
+        "fn": 2.0,
+        "sensitivity": 0.98,
+        "specificity": 0.9933333333333333,
+        "accuracy": 0.99
+      },
+      "ig": {
+        "tp": 97.0,
+        "tn": 298.0,
+        "fp": 2.0,
+        "fn": 3.0,
+        "sensitivity": 0.97,
+        "specificity": 0.9933333333333333,
+        "accuracy": 0.9875
+      }
+    },
+    "confusion_matrix": [
+      [
+        98,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        99,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        98,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        97
+      ]
+    ]
+  },
+  "DL_full_data": {
+    "name": "ResNet-18",
+    "regime": "Full-Data 100%",
+    "category": "Deep Learning",
+    "train_time_sec": 72.63353080099478,
+    "latency_ms": 1.8996343300386798,
+    "test_accuracy": 0.995,
+    "macro_f1": 0.9950000000000001,
+    "per_class": {
+      "basophil": {
+        "tp": 100.0,
+        "tn": 300.0,
+        "fp": 0.0,
+        "fn": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0
+      },
+      "eosinophil": {
+        "tp": 100.0,
+        "tn": 300.0,
+        "fp": 0.0,
+        "fn": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0
+      },
+      "erythroblast": {
+        "tp": 99.0,
+        "tn": 299.0,
+        "fp": 1.0,
+        "fn": 1.0,
+        "sensitivity": 0.99,
+        "specificity": 0.9966666666666667,
+        "accuracy": 0.995
+      },
+      "ig": {
+        "tp": 99.0,
+        "tn": 299.0,
+        "fp": 1.0,
+        "fn": 1.0,
+        "sensitivity": 0.99,
+        "specificity": 0.9966666666666667,
+        "accuracy": 0.995
+      }
+    },
+    "confusion_matrix": [
+      [
+        100,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        99,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        99
+      ]
+    ]
+  }
+}

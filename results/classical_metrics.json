@@ -1,0 +1,634 @@
+{
+  "SVM": {
+    "model_name": "SVM",
+    "model_type": "svm",
+    "use_pca": false,
+    "num_components": null,
+    "train_time_sec": 0.017334575997665524,
+    "extraction_latency_ms": 10.382653147531528,
+    "prediction_latency_ms": 0.014825870002823649,
+    "total_inference_latency_ms": 10.397479017534351,
+    "validation_metrics": {
+      "overall_accuracy": 0.955,
+      "macro_f1": 0.9552454434260816,
+      "per_class": {
+        "basophil": {
+          "tp": 97.0,
+          "tn": 295.0,
+          "fp": 5.0,
+          "fn": 3.0,
+          "sensitivity": 0.97,
+          "specificity": 0.9833333333333333,
+          "accuracy": 0.98
+        },
+        "eosinophil": {
+          "tp": 99.0,
+          "tn": 300.0,
+          "fp": 0.0,
+          "fn": 1.0,
+          "sensitivity": 0.99,
+          "specificity": 1.0,
+          "accuracy": 0.9975
+        },
+        "erythroblast": {
+          "tp": 93.0,
+          "tn": 298.0,
+          "fp": 2.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9933333333333333,
+          "accuracy": 0.9775
+        },
+        "ig": {
+          "tp": 93.0,
+          "tn": 289.0,
+          "fp": 11.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9633333333333334,
+          "accuracy": 0.955
+        }
+      },
+      "confusion_matrix": [
+        [
+          97,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          99,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          93,
+          7
+        ],
+        [
+          5,
+          0,
+          2,
+          93
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    },
+    "test_metrics": {
+      "overall_accuracy": 0.9625,
+      "macro_f1": 0.9627004303873486,
+      "per_class": {
+        "basophil": {
+          "tp": 96.0,
+          "tn": 296.0,
+          "fp": 4.0,
+          "fn": 4.0,
+          "sensitivity": 0.96,
+          "specificity": 0.9866666666666667,
+          "accuracy": 0.98
+        },
+        "eosinophil": {
+          "tp": 100.0,
+          "tn": 300.0,
+          "fp": 0.0,
+          "fn": 0.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "accuracy": 1.0
+        },
+        "erythroblast": {
+          "tp": 93.0,
+          "tn": 299.0,
+          "fp": 1.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9966666666666667,
+          "accuracy": 0.98
+        },
+        "ig": {
+          "tp": 96.0,
+          "tn": 290.0,
+          "fp": 10.0,
+          "fn": 4.0,
+          "sensitivity": 0.96,
+          "specificity": 0.9666666666666667,
+          "accuracy": 0.965
+        }
+      },
+      "confusion_matrix": [
+        [
+          96,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          93,
+          6
+        ],
+        [
+          3,
+          0,
+          1,
+          96
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    }
+  },
+  "PCA SVM": {
+    "model_name": "PCA SVM",
+    "model_type": "svm",
+    "use_pca": true,
+    "num_components": 8,
+    "train_time_sec": 0.012037970998790115,
+    "extraction_latency_ms": 10.382653147531528,
+    "prediction_latency_ms": 0.010209982501692139,
+    "total_inference_latency_ms": 10.39286313003322,
+    "validation_metrics": {
+      "overall_accuracy": 0.9125,
+      "macro_f1": 0.912942685991464,
+      "per_class": {
+        "basophil": {
+          "tp": 91.0,
+          "tn": 289.0,
+          "fp": 11.0,
+          "fn": 9.0,
+          "sensitivity": 0.91,
+          "specificity": 0.9633333333333334,
+          "accuracy": 0.95
+        },
+        "eosinophil": {
+          "tp": 99.0,
+          "tn": 300.0,
+          "fp": 0.0,
+          "fn": 1.0,
+          "sensitivity": 0.99,
+          "specificity": 1.0,
+          "accuracy": 0.9975
+        },
+        "erythroblast": {
+          "tp": 90.0,
+          "tn": 294.0,
+          "fp": 6.0,
+          "fn": 10.0,
+          "sensitivity": 0.9,
+          "specificity": 0.98,
+          "accuracy": 0.96
+        },
+        "ig": {
+          "tp": 85.0,
+          "tn": 282.0,
+          "fp": 18.0,
+          "fn": 15.0,
+          "sensitivity": 0.85,
+          "specificity": 0.94,
+          "accuracy": 0.9175
+        }
+      },
+      "confusion_matrix": [
+        [
+          91,
+          0,
+          2,
+          7
+        ],
+        [
+          0,
+          99,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          90,
+          10
+        ],
+        [
+          11,
+          0,
+          4,
+          85
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    },
+    "test_metrics": {
+      "overall_accuracy": 0.9425,
+      "macro_f1": 0.9428603934616085,
+      "per_class": {
+        "basophil": {
+          "tp": 95.0,
+          "tn": 294.0,
+          "fp": 6.0,
+          "fn": 5.0,
+          "sensitivity": 0.95,
+          "specificity": 0.98,
+          "accuracy": 0.9725
+        },
+        "eosinophil": {
+          "tp": 100.0,
+          "tn": 300.0,
+          "fp": 0.0,
+          "fn": 0.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "accuracy": 1.0
+        },
+        "erythroblast": {
+          "tp": 89.0,
+          "tn": 298.0,
+          "fp": 2.0,
+          "fn": 11.0,
+          "sensitivity": 0.89,
+          "specificity": 0.9933333333333333,
+          "accuracy": 0.9675
+        },
+        "ig": {
+          "tp": 93.0,
+          "tn": 285.0,
+          "fp": 15.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.95,
+          "accuracy": 0.945
+        }
+      },
+      "confusion_matrix": [
+        [
+          95,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          89,
+          10
+        ],
+        [
+          5,
+          0,
+          2,
+          93
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    }
+  },
+  "Random Forest": {
+    "model_name": "Random Forest",
+    "model_type": "random_forest",
+    "use_pca": false,
+    "num_components": null,
+    "train_time_sec": 0.15243936899787514,
+    "extraction_latency_ms": 10.382653147531528,
+    "prediction_latency_ms": 0.09226887499607983,
+    "total_inference_latency_ms": 10.474922022527608,
+    "validation_metrics": {
+      "overall_accuracy": 0.9225,
+      "macro_f1": 0.9233164827326426,
+      "per_class": {
+        "basophil": {
+          "tp": 94.0,
+          "tn": 294.0,
+          "fp": 6.0,
+          "fn": 6.0,
+          "sensitivity": 0.94,
+          "specificity": 0.98,
+          "accuracy": 0.97
+        },
+        "eosinophil": {
+          "tp": 98.0,
+          "tn": 299.0,
+          "fp": 1.0,
+          "fn": 2.0,
+          "sensitivity": 0.98,
+          "specificity": 0.9966666666666667,
+          "accuracy": 0.9925
+        },
+        "erythroblast": {
+          "tp": 88.0,
+          "tn": 296.0,
+          "fp": 4.0,
+          "fn": 12.0,
+          "sensitivity": 0.88,
+          "specificity": 0.9866666666666667,
+          "accuracy": 0.96
+        },
+        "ig": {
+          "tp": 89.0,
+          "tn": 280.0,
+          "fp": 20.0,
+          "fn": 11.0,
+          "sensitivity": 0.89,
+          "specificity": 0.9333333333333333,
+          "accuracy": 0.9225
+        }
+      },
+      "confusion_matrix": [
+        [
+          94,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          98,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          88,
+          12
+        ],
+        [
+          6,
+          1,
+          4,
+          89
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    },
+    "test_metrics": {
+      "overall_accuracy": 0.9425,
+      "macro_f1": 0.9431014282833673,
+      "per_class": {
+        "basophil": {
+          "tp": 93.0,
+          "tn": 296.0,
+          "fp": 4.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9866666666666667,
+          "accuracy": 0.9725
+        },
+        "eosinophil": {
+          "tp": 99.0,
+          "tn": 299.0,
+          "fp": 1.0,
+          "fn": 1.0,
+          "sensitivity": 0.99,
+          "specificity": 0.9966666666666667,
+          "accuracy": 0.995
+        },
+        "erythroblast": {
+          "tp": 91.0,
+          "tn": 298.0,
+          "fp": 2.0,
+          "fn": 9.0,
+          "sensitivity": 0.91,
+          "specificity": 0.9933333333333333,
+          "accuracy": 0.9725
+        },
+        "ig": {
+          "tp": 94.0,
+          "tn": 284.0,
+          "fp": 16.0,
+          "fn": 6.0,
+          "sensitivity": 0.94,
+          "specificity": 0.9466666666666667,
+          "accuracy": 0.945
+        }
+      },
+      "confusion_matrix": [
+        [
+          93,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          99,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          91,
+          8
+        ],
+        [
+          3,
+          1,
+          2,
+          94
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    }
+  },
+  "PCA Random Forest": {
+    "model_name": "PCA Random Forest",
+    "model_type": "random_forest",
+    "use_pca": true,
+    "num_components": 8,
+    "train_time_sec": 0.15829139600100461,
+    "extraction_latency_ms": 10.382653147531528,
+    "prediction_latency_ms": 0.05987684749925393,
+    "total_inference_latency_ms": 10.442529995030782,
+    "validation_metrics": {
+      "overall_accuracy": 0.9,
+      "macro_f1": 0.9006904995638545,
+      "per_class": {
+        "basophil": {
+          "tp": 90.0,
+          "tn": 289.0,
+          "fp": 11.0,
+          "fn": 10.0,
+          "sensitivity": 0.9,
+          "specificity": 0.9633333333333334,
+          "accuracy": 0.9475
+        },
+        "eosinophil": {
+          "tp": 96.0,
+          "tn": 299.0,
+          "fp": 1.0,
+          "fn": 4.0,
+          "sensitivity": 0.96,
+          "specificity": 0.9966666666666667,
+          "accuracy": 0.9875
+        },
+        "erythroblast": {
+          "tp": 90.0,
+          "tn": 292.0,
+          "fp": 8.0,
+          "fn": 10.0,
+          "sensitivity": 0.9,
+          "specificity": 0.9733333333333334,
+          "accuracy": 0.955
+        },
+        "ig": {
+          "tp": 84.0,
+          "tn": 280.0,
+          "fp": 20.0,
+          "fn": 16.0,
+          "sensitivity": 0.84,
+          "specificity": 0.9333333333333333,
+          "accuracy": 0.91
+        }
+      },
+      "confusion_matrix": [
+        [
+          90,
+          0,
+          2,
+          8
+        ],
+        [
+          2,
+          96,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          90,
+          10
+        ],
+        [
+          9,
+          1,
+          6,
+          84
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    },
+    "test_metrics": {
+      "overall_accuracy": 0.9375,
+      "macro_f1": 0.9379735914802553,
+      "per_class": {
+        "basophil": {
+          "tp": 93.0,
+          "tn": 294.0,
+          "fp": 6.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.98,
+          "accuracy": 0.9675
+        },
+        "eosinophil": {
+          "tp": 96.0,
+          "tn": 297.0,
+          "fp": 3.0,
+          "fn": 4.0,
+          "sensitivity": 0.96,
+          "specificity": 0.99,
+          "accuracy": 0.9825
+        },
+        "erythroblast": {
+          "tp": 93.0,
+          "tn": 298.0,
+          "fp": 2.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9933333333333333,
+          "accuracy": 0.9775
+        },
+        "ig": {
+          "tp": 93.0,
+          "tn": 286.0,
+          "fp": 14.0,
+          "fn": 7.0,
+          "sensitivity": 0.93,
+          "specificity": 0.9533333333333334,
+          "accuracy": 0.9475
+        }
+      },
+      "confusion_matrix": [
+        [
+          93,
+          2,
+          0,
+          5
+        ],
+        [
+          1,
+          96,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          93,
+          6
+        ],
+        [
+          4,
+          1,
+          2,
+          93
+        ]
+      ],
+      "class_names": [
+        "basophil",
+        "eosinophil",
+        "erythroblast",
+        "ig"
+      ]
+    }
+  }
+}

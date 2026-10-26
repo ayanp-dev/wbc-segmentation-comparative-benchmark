@@ -1,0 +1,25 @@
+# Dataset
+bloodcells_4classes_500/
+
+# PyTorch checkpoints and models
+*.pth
+*.pt
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
